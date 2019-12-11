@@ -20,6 +20,21 @@ function printCds(cds) {
 
 function getData() {
   $.ajax({
+    url: "php/getAllCd.php",
+    method: "GET",
+    success: function (data) {
+      console.log("data", data);
+      // printCd(data);
+      printCds(data);
+      getAuthor();
+    },
+    error: function (error) {
+      console.log("error", error);
+    }
+  });
+}
+function getAuthor() {
+  $.ajax({
     url: "php/getAuthor.php",
     method: "GET",
     success: function (data) {
@@ -32,6 +47,7 @@ function getData() {
     }
   });
 }
+
 function init() {
   getData();
 }
