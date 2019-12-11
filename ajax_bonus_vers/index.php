@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
@@ -37,8 +37,9 @@
 </head>
 
 <body>
+
   <div class="container">
-    
+
   </div>
 
   <script id="cd-template" type="text/x-handlebars-template">
@@ -52,6 +53,21 @@
       </div>
     </div>
   </script>
+
+  <!-- <pre>
+  <?php
+  // include "php/cds.php";
+  // $author = "Queen";
+  // $authors = [];
+  // foreach ($cds as $cd) {
+  //   if ($cd['author'] == $author) {
+  //     $authors[] = $cd;
+  //     $singleAuthor = $cd;
+  //   }
+  // }
+  // print_r($singleAuthor);
+  ?>
+  </pre> -->
 </body>
 
 </html>

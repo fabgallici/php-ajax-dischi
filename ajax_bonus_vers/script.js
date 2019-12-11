@@ -1,14 +1,3 @@
-function printCds(cds) {
-  var target = $('.container');
-  var template = $('#cd-template').html();
-  var compiled = Handlebars.compile(template);
-  for (let i = 0; i < cds.length; i++) {
-    var compiledCd = compiled(cds[i]);
-    target.append(compiledCd);
-    console.log(cds[i]);
-  }
-
-}
 function printCd(cd) {
   var target = $('.container');
   var template = $('#cd-template').html();
@@ -18,13 +7,24 @@ function printCd(cd) {
 
 }
 
+function printCds(cds) {
+  var target = $('.container');
+  var template = $('#cd-template').html();
+  var compiled = Handlebars.compile(template);
+  for (let i = 0; i < cds.length; i++) {
+    var compiledCd = compiled(cds[i]);
+    target.append(compiledCd);
+    console.log(cds[i]);
+  }
+}
+
 function getData() {
   $.ajax({
     url: "php/getAuthor.php",
     method: "GET",
     success: function (data) {
       console.log("data", data);
-      // printCd(data[0]);
+      // printCd(data);
       printCds(data);
     },
     error: function (error) {
