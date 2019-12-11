@@ -1,0 +1,33 @@
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #363041;
+}
+.container {
+  width: 90%;
+  max-width: 1150px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #fff;
+}
+.card {
+  width: 25%;
+  padding: 10px; 
+  height: 430px;
+}
+.cd {
+  padding: 0 20px;
+  height: 100%;
+  border: 1px solid #000;
+  background-color: #1f171d;
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
