@@ -12,9 +12,17 @@
   - Solo con l'utilizzo di PHP, che stampa
   direttamente i dischi in pagina: al caricamento
   della pagina ci saranno tutti i dischi. -->
+  <?php
+  include 'data.php';
+  include 'helper.php';
+  ?>
 </head>
 
 <body>
+  <div class="container">
+    <?php printCDs($cds); ?>
+  </div>
+
 
 </body>
 
