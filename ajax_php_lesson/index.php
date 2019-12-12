@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
@@ -25,21 +25,18 @@
   <!-- Stampare a schermo una decina di dischi musicali
   (vedi screenshot) in due modi diversi:
   - Attraverso l'utilizzo di AJAX: al caricamento 
-  della pagina ajax chiederà attraverso una 
-  chiamata i dischi a php e li stamperà 
-  attraverso handlebars.
-  Utilizzare: Html, Sass, JS, jQuery, handlebars, Php
-  Opzionale: 
-  - Attraverso un'altra chiamata ajax, filtrare gli 
-  album per artista
-  -->
+della pagina ajax chiederà attraverso una 
+chiamata i dischi a php e li stamperà 
+attraverso handlebars.
+Utilizzare: Html, Sass, JS, jQuery, handlebars, Php-->
 
 </head>
 
 <body>
-
+  <input type="text" class="my_input">
+  <button class="my_button">CERCA</button>
   <div class="container">
-
+    
   </div>
 
   <script id="cd-template" type="text/x-handlebars-template">
@@ -53,23 +50,6 @@
       </div>
     </div>
   </script>
-
-  <!-- TEST DEBUG  -->
-  <pre>
-  <?php
-    include "php/cds.php";
-    $author = "Queen";
-    // $author = $_GET['name'];
-    $authors = [];
-    foreach ($cds as $cd) {
-      if ($cd['author'] == $author) {
-        $authors[] = $cd;
-        // $singleAuthor = $cd;
-      }
-    }
-    print_r($authors);
-  ?>
-  </pre>
 </body>
 
 </html>
